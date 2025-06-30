@@ -1,0 +1,148 @@
+ html {
+      scroll-behavior: smooth;
+    }
+
+    /* TEXT + NAVIGATION STYLING */
+    .gradient-text {
+      background: linear-gradient(to right, #1e40af, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-hero-gradient {
+      background: linear-gradient(to bottom right, #ffffff, #1e40af);
+    }
+    .sticky-nav {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* SCROLLING PROFILE IMAGE */
+    #scrollProfile {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      opacity: 0;
+      transform: translateY(-20px);
+      border-color: #1e40af;
+    }
+    #scrollProfile.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* SCROLL TO TOP BUTTON */
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      z-index: 50;
+      background-color: #1e40af;
+      color: white;
+      padding: 0.75rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 15px -3px rgba(30, 64, 175, 0.5), 0 4px 6px -2px rgba(30, 64, 175, 0.3);
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    #scrollToTopBtn:hover {
+      background-color: #2563eb;
+    }
+
+    /* TECH STACK SCROLL STYLES */
+    #techStackScroller::-webkit-scrollbar, #skillsScroll::-webkit-scrollbar {
+      display: none;
+    }
+    #techStackScroller, #skillsScroll {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    #techStackList {
+      display: flex;
+      gap: 3rem;
+      animation: scrollLeft 40s linear infinite;
+      will-change: transform;
+      user-select: none;
+    }
+    #techStackScroller:hover #techStackList {
+      animation-play-state: paused;
+      cursor: grab;
+    }
+
+    .tech-icon {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      background: #1e293b;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .tech-icon:hover {
+      transform: scale(1.15);
+      box-shadow: 0 8px 15px rgb(0 0 0 / 0.2);
+    }
+    .tech-icon img {
+      width: 48px;
+      height: 48px;
+      filter: drop-shadow(0 0 1px rgba(0,0,0,0.25));
+    }
+
+.logos-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.4;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  filter: blur(0.3px);
+}
+.logos-icon img {
+  width: 40px;
+  height: 40px;
+}
+.logos-icon p {
+  font-size: 0.75rem;
+  color: white;
+  margin-top: 4px;
+}
+
+/* Floating animations */
+@keyframes float1 { from { transform: translateY(0); } to { transform: translateY(-30px); } }
+@keyframes float2 { from { transform: translateY(0); } to { transform: translateY(-20px); } }
+@keyframes float3 { from { transform: translateY(0); } to { transform: translateY(-40px); } }
+@keyframes float4 { from { transform: translateY(0); } to { transform: translateY(-25px); } }
+@keyframes float5 { from { transform: translateY(0); } to { transform: translateY(-35px); } }
+@keyframes float6 { from { transform: translateY(0); } to { transform: translateY(-15px); } }
+@keyframes float7 { from { transform: translateY(0); } to { transform: translateY(-45px); } }
+@keyframes float8 { from { transform: translateY(0); } to { transform: translateY(-28px); } }
+
+.float1 { animation-name: float1; }
+.float2 { animation-name: float2; }
+.float3 { animation-name: float3; }
+.float4 { animation-name: float4; }
+.float5 { animation-name: float5; }
+.float6 { animation-name: float6; }
+.float7 { animation-name: float7; }
+.float8 { animation-name: float8; }
+
+@keyframes float9 { from { transform: translateY(0); } to { transform: translateY(-22px); } }
+@keyframes float10 { from { transform: translateY(0); } to { transform: translateY(-33px); } }
+@keyframes float11 { from { transform: translateY(0); } to { transform: translateY(-18px); } }
+@keyframes float12 { from { transform: translateY(0); } to { transform: translateY(-27px); } }
+
+.float9 { animation-name: float9; }
+.float10 { animation-name: float10; }
+.float11 { animation-name: float11; }
+.float12 { animation-name: float12; }

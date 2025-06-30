@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body class="bg-white text-slate-700 font-sans">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full z-50 transition duration-300">
+    <nav id="navbar" class="flex justify-between items-center px-6 md:px-20 py-4 text-slate-800">
+      <div class="font-bold text-xl text-blue-900">ALD</div>
+      <ul class="hidden md:flex space-x-4 text-sm font-medium">
+        <li><a href="#about" class="hover:text-blue-700">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-700">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-700">Projects</a></li>
+        <li><a href="#experience" class="hover:text-blue-700">Experience</a></li>
+        <li><a href="#contact" class="hover:text-blue-700">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-blue-900 focus:outline-none">
+        <span class="material-icons" id="menuIcon">menu</span>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="md:hidden hidden px-6 pb-4 bg-white">
+      <ul class="space-y-2 text-sm font-medium text-blue-900">
+        <li><a href="#about" class="block hover:text-blue-700">About</a></li>
+        <li><a href="#skills" class="block hover:text-blue-700">Skills</a></li>
+        <li><a href="#projects" class="block hover:text-blue-700">Projects</a></li>
+        <li><a href="#experience" class="block hover:text-blue-700">Experience</a></li>
+        <li><a href="#contact" class="block hover:text-blue-700">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Scroll-triggered Profile Image -->
+  <div id="scrollProfile" class="fixed top-20 left-4 md:left-10 w-20 h-20 rounded-full overflow-hidden border-4 shadow-lg z-40">
+    <img src="507.jpg" alt="Profile" class="w-full h-full object-cover" />
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn" aria-label="Scroll to top">
+    <span class="material-icons">arrow_upward</span>
+  </button>
+
+<section class="h-screen flex flex-col justify-center items-center text-center pt-24 px-4 relative overflow-hidden">
+
+  <!-- Animated Background -->
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 opacity-90 overflow-hidden">
+    <div class="w-full h-full relative">
+      
+      <!-- Floating tech logos -->
+      <div class="logos-icon absolute float1" style="top:10%; left:10%;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        <p>PHP</p>
+      </div>
+
+      <div class="logos-icon absolute float2" style="top:20%; left:40%;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <p>MySQL</p>
+      </div>
+
+      <div class="logos-icon absolute float3" style="top:60%; left:20%;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+
+      <div class="logos-icon absolute float4" style="top:40%; left:70%;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <p>HTML5</p>
+      </div>
+
+      <div class="logos-icon absolute float5" style="top:80%; left:30%;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+
+      <div class="logos-icon absolute float6" style="top:15%; left:75%;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native">
+        <p>React Native</p>
+      </div>
+
+      <div class="logos-icon absolute float7" style="top:50%; left:10%;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+        <p>Photoshop</p>
+      </div>
+
+      <div class="logos-icon absolute float8" style="top:70%; left:80%;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva">
+        <p>Canva</p>
+      </div>
+
+       <div class="logos-icon absolute float9" style="top:20%; left:85%;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+    <p>GitHub</p>
+  </div>
+
+  <!-- Microsoft Word -->
+  <div class="logos-icon absolute float10" style="top:35%; left:15%;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/word/word-original.svg" alt="Word">
+    <p>Word</p>
+  </div>
+
+  <!-- Microsoft Excel -->
+  <div class="logos-icon absolute float11" style="top:65%; left:60%;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/excel/excel-original.svg" alt="Excel">
+    <p>Excel</p>
+  </div>
+
+  <!-- Microsoft PowerPoint -->
+  <div class="logos-icon absolute float12" style="top:45%; left:85%;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerpoint/powerpoint-original.svg" alt="PowerPoint">
+    <p>PowerPoint</p>
+  </div>
+
+    </div>
+  </div>
+
+  <!-- Content -->
+  <h1 class="relative text-4xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-[length:200%] bg-clip-text text-transparent animate-gradient-slide">
+    AL.Dev
+  </h1>
+
+  <p class="relative text-lg md:text-2xl mb-6 text-slate-200 drop-shadow-md">
+    Passionate Web Developer
+  </p>
+
+  <a href="#projects" class="relative bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+    View My Project
+  </a>
+</section>
+
+
+
+
+
+
+<!-- About Me Section -->
+<!-- About Me Section -->
+<section id="about" class="py-20 px-4 md:px-20 bg-gradient-to-r from-white to-blue-50">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+
+    <!-- Profile Image -->
+    <div class="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-blue-900 shadow-lg flex-shrink-0">
+      <img src="507.jpg" alt="Alvin P. Molina" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Text Content -->
+    <div class="flex-1">
+      <h2 class="text-4xl font-bold text-blue-900 mb-4">About Me</h2>
+      <p class="text-slate-700 text-base md:text-lg leading-relaxed mb-4">
+        Hello! I’m <span class="font-semibold text-blue-800">Alvin P. Molina</span>, a web developer who enjoys creating simple, clean, and useful websites.
+        I know how to use <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Tailwind CSS</strong>, and <strong>React Native</strong> to build front-end websites. 
+        I also work with <strong>PHP</strong>, <strong>C#</strong> and <strong>MySQL</strong> for back-end development.
+        I always try to improve my skills and enjoy solving problems with technology.
+      </p>
+
+      <!-- Education -->
+      <div class="bg-white border-l-4 border-blue-900 p-4 shadow-sm mb-4">
+        <h3 class="text-lg font-semibold text-blue-800 mb-1">Education</h3>
+        <p class="text-slate-700 text-sm">
+          Bachelor of Science in Information Technology<br />
+          JH Cerilles State College – Main Campus
+        </p>
+      </div>
+
+      <!-- Experience -->
+<!-- Experience -->
+<div class="bg-white border-l-4 border-blue-900 p-4 shadow-sm" id="experience">
+  <h3 class="text-lg font-semibold text-blue-800 mb-1">Work Experience / OJT</h3>
+  <p class="text-slate-700 text-sm font-medium">School Division of Zamboanga del Sur — 2025</p>
+  <ul class="list-disc list-inside text-slate-700 text-sm mt-1 space-y-1">
+    <li>Network installation and troubleshooting</li>
+    <li>Resetting Microsoft accounts</li>
+    <li>Client support and end-user assistance</li>
+  </ul>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Tech Stack Section -->
+  <section id="skills" class="py-20 px-6 md:px-20 bg-gray-900 text-white select-none font-sans">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-5xl font-light text-blue-400 mb-16 text-center tracking-widest font-[Poppins]">Tech Stack</h2>
+      <div id="techStackScroller" class="relative w-full max-w-5xl mx-auto overflow-hidden rounded-lg" aria-label="Scrolling tech stack logos">
+        <div id="techStackList" class="flex space-x-12 py-6 px-4 items-center whitespace-nowrap will-change-transform">
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><p>PHP</p></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><p>MySQL</p></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><p>HTML5</p></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><p>CSS3</p></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native"><p>React Native</p></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"><p>Photoshop</p></div>
+            <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"><p>Canva</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-4 md:px-20 bg-gradient-to-r from-blue-50 to-blue-100">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-blue-900 mb-12 text-center">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Project Card 1 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+        <div class="overflow-hidden">
+          <img src="set.png" class="w-full h-56 object-cover" alt="SET Dashboard" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-blue-900 mb-2">SET Scheduling System</h3>
+          <p class="text-slate-700 text-sm mb-4">A class scheduling platform for IT departments.</p>
+          <button onclick="openModal('modalSET')" class="px-5 py-2 bg-blue-900 text-white text-sm rounded-full hover:bg-blue-800 transition">
+            View Project
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+        <div class="overflow-hidden">
+          <img src="hitch.png" class="w-full h-56 object-cover" alt="Hitch Dashboard" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-blue-900 mb-2">Hitch, Online System</h3>
+          <p class="text-slate-700 text-sm mb-4">A request system that connects clients and providers digitally.</p>
+          <button onclick="openModal('modalHitch')" class="px-5 py-2 bg-blue-900 text-white text-sm rounded-full hover:bg-blue-800 transition">
+            View Project
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+<section id="contact" class="py-16 px-4 md:px-20 bg-blue-900 text-white">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Find Me</h2>
+    <p class="text-blue-200 mb-8">To contact me, just click on the icon of your preferred platform.</p>
+
+    <div class="flex justify-center gap-6 flex-wrap">
+      
+      <!-- Email -->
+      <a href="mailto:molinaalvin92@gmail.com" target="_blank" title="Email" class="hover:scale-110 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" class="w-10 h-10" />
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://web.facebook.com/alvin.molina.266357" target="_blank" title="Facebook" class="hover:scale-110 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" class="w-10 h-10" />
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com" target="_blank" title="LinkedIn" class="hover:scale-110 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-10 h-10" />
+      </a>
+
+    </div>
+
+  <div class="flex justify-center gap-6 mt-2">
+    <p>TNT - 09128885937</p>
+    <p>GLOBE - 09542929912 </p>
+  </div>
+  </div>
+</section>
+
+
+<!-- Modal Template -->
+<div id="modalSET" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
+  <div class="bg-white rounded-xl shadow-lg p-6 max-w-md w-full relative animate-fade-in">
+    <button onclick="closeModal('modalSET')" class="absolute top-2 right-3 text-gray-500 hover:text-red-600 text-xl">×</button>
+    <img src="set.png" class="rounded mb-4" alt="SET Preview">
+    <h3 class="text-xl font-semibold text-blue-900">SET Scheduling System</h3>
+    <p class="text-sm text-slate-700 mt-2">To visit this project, please contact the developer.</p>
+    <a href="mailto:molinaalvin92@gmail.com" class="mt-4 inline-block px-4 py-2 bg-blue-900 text-white rounded hover:bg-blue-800 text-sm">Contact Developer</a>
+  </div>
+</div>
+
+<div id="modalHitch" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
+  <div class="bg-white rounded-xl shadow-lg p-6 max-w-md w-full relative animate-fade-in">
+    <button onclick="closeModal('modalHitch')" class="absolute top-2 right-3 text-gray-500 hover:text-red-600 text-xl">×</button>
+    <img src="hitch.png" class="rounded mb-4" alt="Hitch Preview">
+    <h3 class="text-xl font-semibold text-blue-900">Hitch, Online System</h3>
+    <p class="text-sm text-slate-700 mt-2">To visit this project, please contact the developer.</p>
+    <a href="mailto:molinaalvin92@gmail.com" class="mt-4 inline-block px-4 py-2 bg-blue-900 text-white rounded hover:bg-blue-800 text-sm">Contact Developer</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-white text-center text-sm text-slate-600">
+    <p>&copy; 2025 Al.Dev. All rights reserved.</p>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
